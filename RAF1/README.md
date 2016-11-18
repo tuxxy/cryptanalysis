@@ -23,9 +23,9 @@ The result is inserted into the respective S-Box.
 
 To help visualize, let `k` be the key, and `j` be the IV:
 
-k<sub>0</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>],
+k<sub>0</sub> XOR [j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>],
 
-k<sub>1</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>]...
+k<sub>1</sub> XOR [j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>]...
 
 ### Substitution
 
