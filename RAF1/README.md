@@ -6,7 +6,8 @@ It should not be used for anything but learning purposes.
 RAF1 (Random As F\*ck-1) was built for me, the creator, to learn about SP-networks.
 
 To be fair, I have no idea if this even works. It's a work in progress.
-A decryption method hasn't even been made yet. This might as well be a hash function.
+A decryption method hasn't even been made yet. This might as well be a really shitty
+hash function.
 
 ## Description
 
@@ -23,9 +24,9 @@ The result is inserted into the respective S-Box.
 
 To help visualize, let `k` be the key, and `j` be the IV:
 
-k<sub>0</sub> XOR [j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>],
+k<sub>0</sub> XOR [j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>, j<sub>3</sub>],
 
-k<sub>1</sub> XOR [j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>]...
+k<sub>1</sub> XOR [j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>, j<sub>3</sub>]...
 
 ### Substitution
 
