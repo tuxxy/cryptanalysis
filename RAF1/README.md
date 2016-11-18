@@ -22,7 +22,9 @@ and XORing each other. Each chunk of the key will XOR with every chunk of the IV
 The result is inserted into the respective S-Box.
 
 To help visualize, let `k` be the key, and `j` be the IV:
+
 k<sub>0</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>],
+
 k<sub>1</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>]...
 
 ### Substitution
@@ -32,8 +34,8 @@ the least-signigicant bit to determine which S-Box to use. It then takes the six
 inner bits to determine which byte to substitute for.
 
 To help visualize, `00110101` is our byte to substitute. We take the MSB and the LSB
-to determine which S-Box to use. `01 == s<sub>1</sub>`. Then we take the six inner
-bits to determine which byte to substitute. `011010 == 26`. Looking at a 2d array,
+to determine which S-Box to use. `01` == s<sub>1</sub>. Then we take the six inner
+bits to determine which byte to substitute. `011010` == 26. Looking at a 2d array,
 it would look like `sBoxes[1][26]`. That byte is added to the S-Box output and used
 in further rounds.
 
@@ -41,6 +43,7 @@ in further rounds.
 
 RAF-1 should simply distribute each byte from the input S-Box to each output S-Box.
 See the picture below for a graphic from Wikipedia.
+
 ![P-Box Implementation](https://upload.wikimedia.org/wikipedia/commons/c/c7/Link_between_S-Boxes.gif)
 
 ## Summary
