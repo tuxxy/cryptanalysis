@@ -22,8 +22,8 @@ and XORing each other. Each chunk of the key will XOR with every chunk of the IV
 The result is inserted into the respective S-Box.
 
 To help visualize, let `k` be the key, and `j` be the IV:
-`k<sub>0</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>],
-k<sub>1</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>]...`
+k<sub>0</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>],
+k<sub>1</sub>^[j<sub>0</sub>, j<sub>1</sub>, j<sub>2</sub>,iv<sub>3</sub>]...
 
 ### Substitution
 
