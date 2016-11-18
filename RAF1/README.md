@@ -53,3 +53,19 @@ This is the RAF-1 (Random As F\*ck-1) cipher. It's insecure, probably doesn't wo
 and probably a big waste of my time, but it was fun to come up with.
 
 The current build is not working cause I'm an idiot, FYI.
+
+# Cryptanalysis
+
+See the analysis.py file for specific code.
+
+### S-Box Usage Probability
+The current build, b3fdaff, has a statistical problem with S-Box usage. s<sub>0</sub> and s<sub>1</sub> will always be used, preferring s<sub>0</sub> a bit more. s<sub>2</sub> and s<sub>3</sub> are actually *never* used at all. Don't roll your own crypto, kids.
+
+Here's a histogram from `analysis.py`:
+
+```
+S-Box 00: ################################################ - 48
+S-Box 01: ############################################### - 47
+S-Box 10:  - 0
+S-Box 11:  - 0
+```
